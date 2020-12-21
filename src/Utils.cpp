@@ -1,4 +1,4 @@
-#include "include/Utils.h"
+#include "include/utils.h"
 
 sf::CircleShape* create_circle(sf::Vector2f  position, float  radius)
 {

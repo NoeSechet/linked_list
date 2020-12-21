@@ -1,13 +1,20 @@
-#pragma once
+/*
+** EPITECH PROJECT, 2020
+** linked_list
+** File description:
+** screen_list
+*/
 
-#include "Utils.h"
+#ifndef SCREEN_LIST_H_
+#define SCREEN_LIST_H_
+
+#include "utils.h"
 
 typedef struct l_node_s
 {
 	struct l_node_s *next;
 	struct l_node_s *previous;
 	sf::Shape *shape;
-
 } l_node_t;
 
 typedef struct l_list_s
@@ -21,3 +28,6 @@ typedef struct l_list_s
 bool l_list_push_back(l_list_t* list, l_node_t* new_node);
 l_node_t* l_create_node(shape_type type);
 l_list_t *l_create_list(unsigned int size);
+
+
+#endif /* !SCREEN_LIST_H_ */

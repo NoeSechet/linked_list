@@ -1,5 +1,5 @@
-#include "include/Kohaku.h"
-#include "include/Linked_list.h"
+#include "include/kohaku.h"
+#include "include/linked_list.h"
 
 int main()
 {
@@ -12,6 +12,10 @@ int main()
         node->shape->setPosition(rand() % WIN_X, rand() % WIN_Y);
     }
 
+    screen_list_t *screenList = splitScreen(4);
+
+    
+
     while (window.isOpen())
     {
         window.clear();
@@ -23,7 +27,8 @@ int main()
         }
 
         for (l_node_t* node = l_list->begin; node; node = node->next) {
-            window.draw(*node->shape);
+            if (node->shape)
+                window.draw(*node->shape);
         }
 
         window.display();

@@ -1,8 +1,15 @@
-#pragma once
+/*
+** EPITECH PROJECT, 2020
+** linked_list
+** File description:
+** utils
+*/
+
+#ifndef UTILS_H_
+#define UTILS_H_
 
 #include <iostream>
 #include <fstream>
-#include <strstream>
 #include <algorithm>
 #include <cmath>
 #include <list>
@@ -23,3 +30,5 @@ enum shape_type {
 
 sf::CircleShape* create_circle(sf::Vector2f  position, float  radius);
 float getDistance(sf::Vector2f pos1, sf::Vector2f pos2);
+
+#endif /* !UTILS_H_ */
