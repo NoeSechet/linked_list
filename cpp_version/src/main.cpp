@@ -38,11 +38,6 @@ int main()
             
         }
 
-        // for (l_node_t* node = screenList->begin; node; node = node->next) {
-        //     if (node->shape)
-        //         window.draw(*node->shape);
-        // }
-
         window.display();
     }
     return 0;
