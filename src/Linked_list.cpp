@@ -44,7 +44,5 @@ l_list_t *l_create_list(unsigned int size)
 	{
 		l_list_push_back(new_list, l_create_node(shape_type::CIRCLE));
 	}
-
-
 	return new_list;
 }
